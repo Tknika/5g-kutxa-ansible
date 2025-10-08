@@ -52,3 +52,15 @@
       exec docker compose "$@"
     mode: '0755'
   when: "ansible_facts['os_family'] == 'Debian' or ansible_facts['os_family'] == 'Ubuntu'"
+
+- name: Ensure "docker" group exists
+  ansible.builtin.group:
+    name: docker
+    state: present
+
+- name: Add invoking user to docker group 
+  ansible.builtin.user:
+    name: "{{ lookup('env','SUDO_USER') }}"
+    groups: docker
+    append: yes
+    state: present
