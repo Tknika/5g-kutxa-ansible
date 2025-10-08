@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: "{{ 'localhost' if (ansible_pull is defined and ansible_pull) else 'all' }}"
   become: true
   
   vars:
