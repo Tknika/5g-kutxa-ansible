@@ -12,3 +12,4 @@
 
   tasks:
     - import_tasks: tasks/docker.yaml
+    - import_tasks: tasks/portainer.yaml
