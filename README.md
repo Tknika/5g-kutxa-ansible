@@ -13,5 +13,5 @@ sudo apt update && sudo apt install -y ansible git
 A continuación, emplearemos este comando para instalar el software:
 
 ```
-sudo ansible-pull -U https://github.com/Tknika/5g-kutxa-ansible.git -i localhost,
+sudo ansible-pull -U https://github.com/Tknika/5g-kutxa-ansible.git --checkout portainer -i localhost,
 ```
