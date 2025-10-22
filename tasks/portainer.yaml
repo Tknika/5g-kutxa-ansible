@@ -30,3 +30,4 @@
       - portainer_data:/data
     env:
       TZ: "Europe/Madrid"
+    container_default_behavior: no_defaults
