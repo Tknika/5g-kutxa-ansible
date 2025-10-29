@@ -7,7 +7,7 @@ Repositorio para automatizar la instalación de todo el software de 5G-Kutxa
 Antes de ejecutar el contenido del repositorio, es necesario asegurarse de que Ansible se encuentra disponible en el ordenador. Para ello, podemos ejecutar el siguiente comando:
 
 ```
-sudo apt update && sudo apt install -y ansible
+sudo apt update && sudo apt install -y ansible git
 ```
 
 A continuación, emplearemos este comando para instalar el software:
