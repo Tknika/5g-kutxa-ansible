@@ -6,9 +6,9 @@
       - python3-pip
     state: present
 
-- name: Install Python Docker module for Ansible
-  ansible.builtin.pip:
-    name: docker
+- name: Install Python Docker module for Ansible (using apt)
+  ansible.builtin.apt:
+    name: python3-docker
     state: present
 
 - name: Create Portainer data volume
